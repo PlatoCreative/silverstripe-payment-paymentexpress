@@ -1,5 +1,5 @@
 {
-	"name": "PlatoCreative/payment-paymentexpress",
+	"name": "plato-creative/payment-paymentexpress",
 	"description": "SilverStripe Payment Express Module",
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
