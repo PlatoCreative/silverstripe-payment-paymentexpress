@@ -14,3 +14,7 @@ PaymentFactory:
 PaymentExpressGateway_PxPay:
   url:
     'https://sec.paymentexpress.com/pxpay/pxaccess.aspx'
+
+SiteConfig:
+  extensions:
+    - PXPaySiteConfig
