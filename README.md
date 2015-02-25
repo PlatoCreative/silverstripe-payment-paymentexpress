@@ -1,9 +1,9 @@
 # SilverStripe Payment PaymentExpress Module
 
-**Work in progress, some changes to the API still to come**
+**Based on silverstripe-payment-paymentexpress by Frank Mullenger. DPS details moved to SiteConfig to allow for use across Sub Sites**
 
 ## Maintainer Contacts
-*  [Frank Mullenger](https://github.com/frankmullenger)
+*  [Plato Creative](https://github.com/platocreative)
 
 ## Requirements
 * SilverStripe 3.0.x
@@ -31,7 +31,7 @@ PaymentProcessor:
     live:
       - 'PaymentExpressPxPay'
 ```
-Configure using your PaymentExpress account details are now set through site config. These are editable under settings / PXPay Info
+Configure using your PaymentExpress account details are now set through site config. These are editable under settings / PXPay Info.
 
 By default the gateway class can accept NZD, USD or GBP (see PaymentExpressGateway_PxPay::$supportedCurrencies). Usually your PaymentExpress account will be for a single currency that matches your merchant account. To specify this currency as the single acceptable currency alter the YAML config file e.g: a configuration that will only process payments in Australian dollars:
 
