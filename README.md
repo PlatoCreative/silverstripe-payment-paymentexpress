@@ -31,34 +31,16 @@ PaymentProcessor:
     live:
       - 'PaymentExpressPxPay'
 ```
-Configure using your PaymentExpress account details in the same file:
-
-```yaml
-PaymentExpressGateway_PxPay:
-  live:
-    authentication:
-      user_id: 'PxPayUserId'
-      key: 'PxPayKey'
-  dev:
-    authentication:
-      user_id: 'PxPayUserId'
-      key: 'PxPayKey'
-```
+Configure using your PaymentExpress account details are now set through site config. These are editable under settings / PXPay Info
 
 By default the gateway class can accept NZD, USD or GBP (see PaymentExpressGateway_PxPay::$supportedCurrencies). Usually your PaymentExpress account will be for a single currency that matches your merchant account. To specify this currency as the single acceptable currency alter the YAML config file e.g: a configuration that will only process payments in Australian dollars:
 
 ```yaml
 PaymentExpressGateway_PxPay:
   live:
-    authentication:
-      user_id: 'PxPayUserId'
-      key: 'PxPayKey'
     supported_currencies:
       'AUD' : 'Australian Dollar'
   dev:
-    authentication:
-      user_id: 'PxPayUserId'
-      key: 'PxPayKey'
     supported_currencies:
       'AUD' : 'Australian Dollar'
 ```
